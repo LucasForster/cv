@@ -24,3 +24,6 @@
 **/*.upb
 **/*.run.xml
 **/*.vrb
+
+__latexindent_temp.tex
+pdfa.xmpi

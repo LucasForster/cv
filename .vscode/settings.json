@@ -29,11 +29,14 @@
         "**/*.upa": true,
         "**/*.upb": true,
         "**/*.run.xml": true,
-        "**/*.vrb": true
+        "**/*.vrb": true,
+
+        "__latexindent_temp.tex": true,
+        "pdfa.xmpi": true
     },
 
     "latex-workshop.docker.enabled" : true,
-    "latex-workshop.docker.image.latex" : "tianon/latex",
+    "latex-workshop.docker.image.latex" : "texlive/texlive",
 
     "latex-workshop.message.warning.show": false,
     "latex-workshop.message.error.show": false
