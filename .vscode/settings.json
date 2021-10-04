@@ -1,0 +1,40 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    "editor.rulers": [100],
+
+    "editor.formatOnSave": true,
+
+    "files.autoSave": "afterDelay",
+
+    "files.eol": "\n",
+
+    "files.exclude": {
+        "*.pdf": true,
+
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.bcf": true,
+        "**/*.blg": true,
+        "**/*.fls": true,
+        "**/*.gz": true,
+        "**/*.nav": true,
+        "**/*.*latexmk": true,
+        "**/*.log": true,
+        "**/*.out": true,
+        "**/*.snm": true,
+        "**/*.synctex*": true,
+        "**/*.toc": true,
+        "**/*.upa": true,
+        "**/*.upb": true,
+        "**/*.run.xml": true,
+        "**/*.vrb": true
+    },
+
+    "latex-workshop.docker.enabled" : true,
+    "latex-workshop.docker.image.latex" : "tianon/latex",
+
+    "latex-workshop.message.warning.show": false,
+    "latex-workshop.message.error.show": false
+}
