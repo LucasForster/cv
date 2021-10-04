@@ -11,6 +11,8 @@
     "files.eol": "\n",
 
     "files.exclude": {
+        "AltaCV": true,
+
         "*.pdf": true,
 
         "**/*.aux": true,
