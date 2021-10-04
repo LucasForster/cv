@@ -1,1 +1,53 @@
 \ProvidesPackage{preamble}
+
+% page layout
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% packages
+\usepackage{paracol} % The paracol package lets you typeset columns of text in parallel
+
+% font
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% colors
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+% https://color.adobe.com/de/Vitamin-C-color-theme-492199/
+\definecolor{ThemeBlue}{HTML}{004358}
+\definecolor{ThemeGreen}{HTML}{1f8a70}
+\definecolor{ThemeLime}{HTML}{bedb39}
+\definecolor{ThemeYellow}{HTML}{ffe11a}
+\definecolor{ThemeOrange}{HTML}{fd7400}
+
+\colorlet{name}{ThemeBlue} % black
+\colorlet{tagline}{ThemeOrange} % PastelRed
+\colorlet{heading}{ThemeBlue} % DarkPastelRed
+\colorlet{headingrule}{ThemeYellow} % GoldenEarth
+\colorlet{subheading}{ThemeOrange} % PastelRed
+\colorlet{accent}{ThemeOrange} % PastelRed
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% fonts
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% bullets, markers
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
