@@ -1,0 +1,26 @@
+# MacOS
+
+**/.DS_Store
+
+# LaTeX
+
+*.pdf
+!graphics/*.pdf
+
+**/*.aux
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.fls
+**/*.gz
+**/*.nav
+**/*.*latexmk
+**/*.log
+**/*.out
+**/*.snm
+**/*.synctex*
+**/*.toc
+**/*.upa
+**/*.upb
+**/*.run.xml
+**/*.vrb
