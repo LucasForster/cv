@@ -6,7 +6,7 @@
 
     "editor.formatOnSave": true,
 
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onFocusChange",
 
     "files.eol": "\n",
 
