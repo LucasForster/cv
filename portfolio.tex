@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper,ragged2e,withhyper]{altacv} % normalphoto
+
+\usepackage{preamble}
+
+\begin{document}
+
+\name{Lucas Forster}
+\tagline{Software Developer}
+
+\photoL{2.8cm}{lucas}
+\photoR{2.8cm}{cm-consulting-logo-square}
+
+\personalinfo{%
+\begin{tabular}{>{\arraybackslash}m{0.45\textwidth} >{\arraybackslash}m{0.45\textwidth}}
+\email{mail@lucasforster.com}
+    & \location{Aachen, Germany}\\
+\homepage{lucasforster.com}
+    % \github{lucasforster}
+    & \printinfo{\faGithub}{github.com/lucasforster}[https://github.com/lucasforster]\\
+% \linkedin{lucasforster}
+\printinfo{\faLinkedin}{linkedin.com/in/lucasforster}[https://linkedin.com/in/lucasforster]
+    % \NewInfoField{xing}{\faXingSquare}[https://xing.com/profile/]
+    % \xing{lucas_forster}
+    & \printinfo{\faXingSquare}{xing.com/profile/lucas_forster}[https://xing.com/profile/lucas_forster]
+\end{tabular}
+}
+
+\makecvheader
+
+\end{document}

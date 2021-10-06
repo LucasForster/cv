@@ -6,6 +6,7 @@
 % packages
 \usepackage{paracol} % The paracol package lets you typeset columns of text in parallel
 
+\usepackage{array}
 % font
 \ifxetexorluatex
   % If using xelatex or lualatex:
@@ -21,7 +22,8 @@
 \fi
 
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\small} % \footnotesize
+\renewcommand{\taglinefont}{\Large\bfseries}
+\renewcommand{\personalinfofont}{\normalsize\bfseries} % \footnotesize
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
@@ -50,3 +52,6 @@
 % bullets, markers
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+
+% graphics
+\graphicspath{{graphics/}}
