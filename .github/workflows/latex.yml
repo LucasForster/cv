@@ -1,0 +1,22 @@
+name: LaTeX
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Compile
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: portfolio.tex
+      - name: Copy
+        run: |
+          mkdir public
+          cp portfolio.pdf public
+      - name: Publish
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
