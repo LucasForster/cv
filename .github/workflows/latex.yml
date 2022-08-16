@@ -11,11 +11,11 @@ jobs:
       - name: Compile
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: portfolio.tex
+          root_file: cv.tex
       - name: Copy
         run: |
           mkdir public
-          cp portfolio.pdf public
+          cp cv.pdf public
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
