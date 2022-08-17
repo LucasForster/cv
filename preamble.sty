@@ -68,6 +68,16 @@
   \end{minipage}
 } % \NewInfoField{link}{\faLink}[https://]
 \newcommand{\yearRight}[1]{\hfill\small\color{body}\faCalendar~#1}
+\newcommand{\cveventSwapped}[2]{%
+  {\large\color{accent}\textbf{#1}\par}
+  \smallskip\normalsize
+  \ifstrequal{#2}{}{}{
+  {\color{emphasis}#2}\par
+  \smallskip}
+  \medskip\normalsize
+}
+
+\newcommand{\subtitle}[1]{{\color{emphasis}#1\par}}
 
 % languages
 \newcommand{\en}[1]{}
