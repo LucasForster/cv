@@ -61,12 +61,7 @@
 \graphicspath{{graphics/}}
 
 % commands
-\newcommand{\link}[1]{
-  \color{accent}\faLink\hspace{.5ex}\color{body}
-  \begin{minipage}{\columnwidth-\widthof{\faLink\hspace{.5ex}}}
-    \href{https://#1}{#1}
-  \end{minipage}
-} % \NewInfoField{link}{\faLink}[https://]
+\NewInfoField{link}{\faLink}[https://]
 \newcommand{\yearRight}[1]{\hfill\small\color{body}\faCalendar~#1}
 \newcommand{\header}[2]{%
   % copied from \cvevent definition, changed skips and removed #3, #4
